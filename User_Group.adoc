@@ -132,3 +132,15 @@ uid=1001(parshetye) gid=1001(aniket) groups=1001(aniket),1003(development)
 ----
 
 NOTE: If we forgot to add -a at the time of adding user in a group, then it will remove the user from all other groups he is a memberof(except primary group)
+
+[source,bash]
+----
+$ groupadd analytics 
+$ usermod -G analytics parshetye
+
+Output:-
+uid=1001(parshetye) gid=1001(aniket) groups=1001(aniket),1005(analytics)
+
+# In the above output the user from the development group has been removed
+
+----

@@ -179,3 +179,31 @@ drwxr-xr-x. 2 *parshetye development  6 Sep 18 08:19 praj
  rwx  rwx   rwx
  421  421   421
 user group other
+
+#### Now, will login to the parshetye user and create an 1 directory(hadoop) and will give write and execute permission to the user only.
+[source,bash]
+----
+[centos@ip-172-31-16-218 ~]$ su parshetye
+Password:
+
+[parshetye@ip-172-31-16-218 ~]$ mkdir hadoop
+[parshetye@ip-172-31-16-218 ~]$ ll
+
+Output:-
+drwxr-xr-x. 2 parshetye aniket  6 Sep 18 09:11 hadoop
+
+# As we see above the default permissions for the newly created directory are 755. Now, will set the w+x to the user and check if user can access the directory for read or  not
+
+[parshetye@ip-172-31-16-218 ~]$ chmod  300 hadoop
+
+[parshetye@ip-172-31-16-218 ~]$ ll
+
+Output:-
+d-wx------. 2 parshetye aniket 25 Sep 18 09:12 hadoop
+
+[parshetye@ip-172-31-16-218 ~]$ cd hadoop/
+[parshetye@ip-172-31-16-218 hadoop]$ ll
+ls: cannot open directory .: Permission denied
+
+
+----

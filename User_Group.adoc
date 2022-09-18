@@ -147,7 +147,7 @@ uid=1001(parshetye) gid=1001(aniket) groups=1001(aniket),1005(analytics)
 
 ----
 
-### How to change groupname and the owner name for the directory
+### How to change group name and the owner name for the directory
 [source,bash]
 ----
 $ sudo mkdir praj/

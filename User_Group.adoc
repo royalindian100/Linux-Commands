@@ -146,3 +146,28 @@ uid=1001(parshetye) gid=1001(aniket) groups=1001(aniket),1005(analytics)
 # In the above output the user <parshetye> from the <development> group has been removed
 
 ----
+
+### How to change groupname and the owner name for the directory
+[source,bash]
+----
+$ sudo mkdir praj/
+$ ll
+Output:-
+-rw-rw-r--. 1 centos centos 73 Sep 18 06:22 aniket.txt
+drwxr-xr-x. 2 root   root    6 Sep 18 08:19 praj
+
+$ sudo chgrp development praj/
+$ ll
+Output:-
+-rw-rw-r--. 1 centos centos      73 Sep 18 06:22 aniket.txt
+drwxr-xr-x. 2 root   *development  6 Sep 18 08:19 praj
+
+$ sudo chown parshetye praj
+$ ll
+
+Output:-
+-rw-rw-r--. 1 centos    centos      73 Sep 18 06:22 aniket.txt
+drwxr-xr-x. 2 *parshetye development  6 Sep 18 08:19 praj
+
+
+----

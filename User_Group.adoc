@@ -5,14 +5,14 @@
 ----
 Syntax:-
 useradd <username>
-useradd aniket
+$ useradd aniket
 
 Syntax:-
 useradd -c <"give your user comment"> <username>
 #-c allow us to add the fullname in the comment field
 
 Command:-
-useradd -c "aniket parshetye" aniket
+$ useradd -c "aniket parshetye" aniket
 
 ----
 
@@ -48,7 +48,7 @@ Syntax:-
 usermod -l <Newname> <Oldname>
 
 Command:-
-usermod -l parshetye aniket
+$ usermod -l parshetye aniket
 
 Output:-
 centos:x:1000:1000:Cloud User:/home/centos:/bin/bash
@@ -65,7 +65,7 @@ Syntax:-
 usermod -d <new path> -m <username>
 
 Command:-
-usermod -d /home/parshetye -m parshetye
+$ usermod -d /home/parshetye -m parshetye
 
 Output:-
 parshetye:x:1001:1001::/*home/parshetye:/bin/bash
@@ -85,7 +85,7 @@ centos:x:1000:
 ----
 
 ### Command to add new group
-[source,barsh]
+[source,bash]
 ----
 Syntax:-
 groupadd <groupname>
@@ -111,3 +111,24 @@ Output:-
 development:x:1003:
 
 ----
+
+### Command to add user in a group
+[source,bash]
+----
+Syntax:-
+usermod -a -G <groupname> <username>
+# -a = Append
+# -G = Group
+
+Command:-
+$ usermod -a -G development parshetye
+
+Output:-
+development:x:1003:parshetye
+
+$ id parshetye
+uid=1001(parshetye) gid=1001(aniket) groups=1001(aniket),1003(development)
+
+----
+
+NOTE: If we forgot to add -a at the time of adding user in a group, then it will remove the user from all other groups he is a memberof(except primary group)

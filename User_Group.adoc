@@ -74,3 +74,26 @@ parshetye:x:1001:1001::/*home/parshetye:/bin/bash
 
 # Groups
 
+### How to check groups
+[source,bash]
+----
+$ cat /etc/group
+
+Output:-
+centos:x:1000:
+*aniket:x:1001:
+----
+
+### Command to add new group
+[source,barsh]
+----
+Syntax:-
+groupadd <groupname>
+
+Command:-
+groupadd dev
+
+Output:-
+$ cat /etc/group
+dev:x:1003:
+----

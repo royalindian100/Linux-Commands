@@ -2,7 +2,58 @@
 
 ### How to add User
 [source,bash]
+----
+Syntax:-
+useradd username
+useradd aniket
+
 Syntax:-
 useradd -c "give your user comment" username
+#-c allow us to add the fullname in the comment field
 
-useradd aniket
+Command:-
+useradd -c "aniket parshetye" aniket
+
+----
+
+### Command to see where all user accounts stored
+[source,bash]
+----
+$ cat /etc/passwd
+
+Output:-
+centos:x:1000:1000:Cloud User:/home/centos:/bin/bash
+aniket:x:1001:1001::/home/aniket:/bin/bash
+
+----
+
+NOTE: When we create the user it will create the same name as a group name by default
+[source,bash]
+----
+$ cat /etc/group
+
+Output:-
+centos:x:1000:
+*aniket:x:1001:
+
+$ id aniket
+Output:-
+uid=1001(aniket) gid=1001(aniket) *groups=1001(aniket)
+----
+
+### Command to change the username
+[source,bash]
+----
+Syntax:-
+usermod -l Newname Oldname
+
+Command:-
+usermod -l parshetye aniket
+
+Output:-
+centos:x:1000:1000:Cloud User:/home/centos:/bin/bash
+parshetye:x:1001:1001::/home/aniket:/bin/bash
+
+#This command only change the username and not the directory path nor the group name
+
+----

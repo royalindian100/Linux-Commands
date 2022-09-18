@@ -91,9 +91,23 @@ Syntax:-
 groupadd <groupname>
 
 Command:-
-groupadd dev
+$ groupadd dev
 
 Output:-
 $ cat /etc/group
 dev:x:1003:
+----
+
+### Command to change the group name
+[source,bash]
+----
+Syntax:-
+groupmod -n <new group name> <old group name>
+
+Command:-
+$ groupmod -n development dev
+
+Output:-
+development:x:1003:
+
 ----

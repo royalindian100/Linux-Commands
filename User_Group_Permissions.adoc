@@ -192,7 +192,9 @@ Password:
 Output:-
 drwxr-xr-x. 2 parshetye aniket  6 Sep 18 09:11 hadoop
 
-# As we see above the default permissions for the newly created directory are 755. Now, will set the w+x to the user and check if user can access the directory for read or  not
+# As we see above the default permissions for the newly created 
+directory are 755. Now, will set the w+x to the user and check 
+if user can access the directory for read or  not
 
 [parshetye@ip-172-31-16-218 ~]$ chmod  300 hadoop
 

@@ -1,0 +1,8 @@
+# User & Groups
+
+### How to add User
+[source,bash]
+Syntax:-
+useradd -c "give your user comment" username
+
+useradd aniket

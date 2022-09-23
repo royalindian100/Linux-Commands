@@ -40,5 +40,14 @@ $ mkdir -p praj/wal
 Output:-
 drwxrwxr-x. 2 centos centos  6 Sep 23 14:47 aniket
 drwxrwxr-x. 3 centos centos 17 Sep 23 15:03 praj
-
 ----
+
+### How to set permissions while making a directory
+
+To add rwx permissions to all the users, Use -m option
+[source,bash]
+$ mkdir -m752 analyst
+[centos@ip-172-31-95-248 ~]$ ll
+Output:-
+drwxr-x-w-. 2 centos centos  6 Sep 23 15:22 analyst
+

@@ -53,3 +53,19 @@ drwxr-x-w-. 2 centos centos  6 Sep 23 15:22 analyst
 
 # Copy Command
 
+This command is use to copy file or group of files or directory
+
+### Command to copy a file to the destination
+[source,bash]
+----
+Syntax:-
+cp file/directory-source destination
+
+Command:-
+$ cp abc.txt aniket/
+----
+
+### Command to copy a directory
+
+
+

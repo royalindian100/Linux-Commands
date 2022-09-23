@@ -66,6 +66,16 @@ $ cp abc.txt aniket/
 ----
 
 ### Command to copy a directory
+[source,bash]
+----
+$ cp aniket/ admin/
+cp: omitting directory ‘aniket/’
 
+To copy file  or directory in recursive manner we use -r or -R oprion
+$ cp -r aniket/ admin/
+----
 
+# Remove Command
+
+This command is to delete file or directory
 

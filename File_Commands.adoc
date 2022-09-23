@@ -113,5 +113,22 @@ $ cat > <filename>
 
 Command:-
 $ cat > demo.txt
+Enter the content here
+ctrl+D To save the file
+----
+
+### Command to view/read the file content
+[source,bash]
+----
+Syntax:- 
+$ cat  <filename>
+
+Command:-
+$ cat  demo.txt
+----
+
+### Command to append the content from one file to another
+[source,bash]
+----
 
 ----

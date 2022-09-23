@@ -51,3 +51,5 @@ $ mkdir -m752 analyst
 Output:-
 drwxr-x-w-. 2 centos centos  6 Sep 23 15:22 analyst
 
+# Copy Command
+

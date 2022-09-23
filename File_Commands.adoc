@@ -100,3 +100,18 @@ rmdir <dir name> OR rm -r <dir name> OR  rm -rf <dir name>
 Command:-
 $ rmdir analyst/
 ----
+
+# cat Command
+
+This command allow us to create single or multiple file, view content of a file, concatenate file and redirect output in a terminal or file
+
+### Command to create file using cat 
+[source,bash]
+----
+Syntax:- 
+$ cat > <filename>
+
+Command:-
+$ cat > demo.txt
+
+----

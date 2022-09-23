@@ -1,0 +1,5 @@
+### mkdir Command
+[source,bash]
+----
+$ mkdir aniket
+----

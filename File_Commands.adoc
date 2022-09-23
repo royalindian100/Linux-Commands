@@ -1,5 +1,44 @@
-### mkdir Command
+# mkdir Command
+
+- mkdir command in linux allows user to create or make new directories.
+- mkdir stands for Make Directory
+- With mkdir, you can also set permissions, create multiple directories (folders) at once, and much more.
+
+### How to make a new directory in Linux
 [source,bash]
 ----
 $ mkdir aniket
+
+Output:-
+drwxrwxr-x. 2 centos centos 6 Sep 23 14:47 aniket
+----
+
+### How to create multiple directories with mkdir
+[source,bash]
+----
+$ mkdir test devops admin OR mkdir {test,devops,admin}
+
+[centos@ip-172-31-95-248 ~]$ ll
+Output:-
+drwxrwxr-x. 2 centos centos  6 Sep 23 15:10 admin
+drwxrwxr-x. 2 centos centos  6 Sep 23 15:10 devops
+drwxrwxr-x. 2 centos centos  6 Sep 23 15:10 test
+----
+
+### How to make a parent directory
+[source,bash]
+----
+$ mkdir praj/wal
+mkdir: cannot create directory ‘praj/wal’: No such file or directory
+
+The above command throws an error because we havn't created praj directory
+We have to use -p(parent directory) to create the nested directory at one time
+For Eg.
+
+$ mkdir -p praj/wal
+[centos@ip-172-31-95-248 ~]$ ll
+Output:-
+drwxrwxr-x. 2 centos centos  6 Sep 23 14:47 aniket
+drwxrwxr-x. 3 centos centos 17 Sep 23 15:03 praj
+
 ----

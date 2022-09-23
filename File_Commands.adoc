@@ -128,7 +128,18 @@ $ cat  demo.txt
 ----
 
 ### Command to append the content from one file to another
+Suppose we have 2 files abc.txt and demo.txt, has the following content 
+abc.txt  = Welcome to Hadoop
+demo.txt = Hello World
 [source,bash]
 ----
+Syntax:-
+$ cat <source> >> <destination>
 
+Command:-
+$ cat abc >> demo.txt
+
+Output:-
+Hello World
+Welcome to Hadoop
 ----

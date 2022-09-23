@@ -144,3 +144,18 @@ Output:-
 Hello World
 Welcome to Hadoop
 ----
+
+### Command to concatenate files to a new file
+[source,bash]
+----
+Syntax:-
+$ cat [file1 file2 .... file n] > [destination filename]
+
+Command:-
+$ cat abc.txt demo.txt > cancat.txt
+
+Output:-
+Hello World
+Welcome to Hadoop
+----
+NOTE- In concatenate command if the destination file dosen't exist then it will create new file and merge the data into that file or If file exist then it will overwrite the content of the file.

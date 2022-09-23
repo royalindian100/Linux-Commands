@@ -77,5 +77,26 @@ $ cp -r aniket/ admin/
 
 # Remove Command
 
-This command is to delete file or directory
+This command is use to delete file or directory
 
+### Command to delete file
+[source,bash]
+----
+Syntax:-
+$ rm <file name>
+
+Command:-
+$ rm abc.txt
+----
+
+### Command to remove the directory
+[source,bash]
+----
+Syntax:-
+rmdir <dir name> OR rm -r <dir name> OR  rm -rf <dir name>
+-r = Recursively
+-f = forcefully
+
+Command:-
+$ rmdir analyst/
+----

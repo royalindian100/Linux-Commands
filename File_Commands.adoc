@@ -161,3 +161,19 @@ Welcome to Hadoop
 NOTE: In concatenate command if the destination file dosen't exist then it will create new file and merge the data into that file OR If file exist then it will overwrite the content of the file.
 
 NOTE: The > will overwrite the file content and >> will append the content
+
+# Move Command
+
+This command is use to move files and directories
+
+### Command to move the file and directory
+[source,bash]
+----
+Syntax:-
+$ mv <source> <destination>
+
+Command:-
+$ mv abc aniket/
+----
+
+

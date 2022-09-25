@@ -72,5 +72,11 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 46 bits physical, 48 bits virtual
 power management:
-
 ----
+
+# Command to get the memory information
+
+### free Command
+
+This command is use to get the memory information
+[source,bash]

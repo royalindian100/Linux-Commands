@@ -143,3 +143,20 @@ Hugepagesize:       2048 kB
 DirectMap4k:       45056 kB
 DirectMap2M:     1003520 kB
 ----
+
+# df Command
+
+df displays the amount of disk space available on the file system
+[source,bash]
+----
+Command:- $ df -h
+Output:-
+
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        470M     0  470M   0% /dev
+tmpfs           495M     0  495M   0% /dev/shm
+tmpfs           495M   13M  482M   3% /run
+tmpfs           495M     0  495M   0% /sys/fs/cgroup
+/dev/xvda1       10G  1.6G  8.5G  16% /
+tmpfs            99M     0   99M   0% /run/user/1000
+----

@@ -35,4 +35,34 @@ Output:-
 # telnet Command
 
 This command is use to check if respective port is open/running or not
+
+- When both port and services are open, it will shows connected 
 [source,bash]
+----
+sudo yum install telnet -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+
+Syntax:-
+$ telnet <private IP> <port number>
+
+Command:-
+$ telnet 172.31.95.248 80
+
+Output:-
+Trying 172.31.95.248...
+Connected to 172.31.95.248.
+----
+- When port is open but service is closed, it will shows connection refused
+[source,bash]
+$ sudo systemctl stop  httpd
+$ telnet 172.31.95.248 80
+Output:- 
+Trying 172.31.95.248...
+telnet: connect to address 172.31.95.248: Connection refused
+
+- When port is closed, it will shows trying....
+[source,bash]
+$ telnet 172.31.95.248 80
+Output:- 
+Trying 172.31.95.248...

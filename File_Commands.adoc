@@ -190,3 +190,21 @@ Prompt:-
 mv: overwrite ‘aniket/abc’? y
 ----
 
+# Loacate command
+
+This command is use to search the files path
+
+### How to install the locate command
+[source,bash]
+$ sudo yum install mlocate
+$ updatedb
+
+### command to search the file name path with locate 
+[source,bash]
+----
+Syntax:-
+$ locate <filename>
+
+Command:-
+$ locate aniket
+----

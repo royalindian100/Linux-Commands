@@ -160,3 +160,21 @@ tmpfs           495M     0  495M   0% /sys/fs/cgroup
 /dev/xvda1       10G  1.6G  8.5G  16% /
 tmpfs            99M     0   99M   0% /run/user/1000
 ----
+
+# du Command
+
+du command summarize disk uses of each file
+[source,bash]
+----
+Command:- $ du -h
+Output:-
+
+4.0K    ./.ssh
+8.0K    ./aniket
+0       ./praj/wal
+4.0K    ./praj
+0       ./test
+0       ./devops
+56K     .
+----
+

@@ -1,0 +1,38 @@
+# ping Command
+
+This command is use to check the status of other services
+[source,bash]
+----
+Syntax:-
+$ ping <hostname> / <IP Address>
+
+Command:-
+$ ping 8.8.8.8  OR  $ ping google.com
+
+Output:-
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=50 time=0.566 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=50 time=0.660 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=50 time=0.641 ms
+----
+
+# hostname Command
+
+This command is use to check the system hostname
+[source,bash]
+----
+Syntax:-
+$ hostname
+----
+
+### Command to check the private IP using hostname
+[source,bash]
+Command:-
+$ hostname -i
+Output:-
+172.31.95.248
+
+# telnet Command
+
+This command is use to check if respective port is open/running or not
+[source,bash]

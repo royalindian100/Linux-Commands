@@ -176,4 +176,17 @@ Command:-
 $ mv abc aniket/
 ----
 
+### Command to move file with interactive prompt
+[source,bash]
+----
+Syntax:-
+$ mv -i <source> <destination>
+-i= interactive prompt before overwrite
+
+Command:-
+$ mv -i abc aniket/
+
+Prompt:-
+mv: overwrite ‘aniket/abc’? y
+----
 

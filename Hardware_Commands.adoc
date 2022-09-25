@@ -80,3 +80,66 @@ power management:
 
 This command is use to get the memory information
 [source,bash]
+----
+Command:- $ free -h
+Output:-
+
+              total        used        free      shared  buff/cache   available
+Mem:           989M        114M        472M         12M        402M        722M
+Swap:            0B          0B          0B
+----
+
+### Using </proc/meminfo> path
+[source,bash]
+----
+Command:- $ cat /proc/meminfo
+Output:-
+
+$ cat /proc/meminfo
+MemTotal:        1012940 kB
+MemFree:          483704 kB
+MemAvailable:     739512 kB
+Buffers:            2600 kB
+Cached:           378712 kB
+SwapCached:            0 kB
+Active:           316184 kB
+Inactive:         110996 kB
+Active(anon):      46088 kB
+Inactive(anon):    12972 kB
+Active(file):     270096 kB
+Inactive(file):    98024 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         45900 kB
+Mapped:            21144 kB
+Shmem:             13192 kB
+Slab:              58312 kB
+SReclaimable:      30912 kB
+SUnreclaim:        27400 kB
+KernelStack:        1920 kB
+PageTables:         5340 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      506468 kB
+Committed_AS:     258740 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       10836 kB
+VmallocChunk:   34359722492 kB
+Percpu:             2624 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     10240 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       45056 kB
+DirectMap2M:     1003520 kB
+----

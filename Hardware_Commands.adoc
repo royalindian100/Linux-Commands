@@ -178,3 +178,15 @@ Output:-
 56K     .
 ----
 
+# lsblk Command
+
+lsblk lists all mass storage devices and partitions on them, including mounted file systems, unmounted file systems and devices without any file system
+[source,bash]
+----
+Command:- $ lsblk
+Output:-
+
+NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+xvda    202:0    0  10G  0 disk
+└─xvda1 202:1    0  10G  0 part /
+----

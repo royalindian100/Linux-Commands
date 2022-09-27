@@ -240,3 +240,6 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 This command prints the username associates with the currect effective ID
 [source,bash]
 $ whoami
+
+# find Command
+ This command 

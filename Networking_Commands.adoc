@@ -81,3 +81,39 @@ This command shows information about your network including statistics on connec
  $ netstat -au [list all the udp ports]
  $ netstat -lntpu [list all the tcp and udp ports]
 ----
+
+# nslookup Command [name server lookup]
+
+This command translates domain name to IP address and vice versa
+
+### Install nslookup
+[source,bash]
+$ sudo yum install bind-utils
+
+### Forward lookup
+[source,bash]
+$ nslookup 8.8.8.8 
+
+### Reverse lookup
+[source,bash]
+----
+$ nslookup google.com
+Output:-
+Server:         172.31.0.2
+Address:        172.31.0.2#53*
+
+Non-authoritative answer:
+Name:   google.com
+Address: 172.253.122.101
+Name:   google.com
+Address: 172.253.122.102
+Name:   google.com
+Address: 172.253.122.113
+----
+NOTE: #53 indicating that we are communicating with it on port 53 which is a standard port number of DNS use to accept queries
+
+# dig Command [domain information groper]
+
+This command is use to gather DNS information and it collects data about domain name server. Helpful for troubleshooting DNS problem
+[source,bash]
+$ dig google.com

@@ -208,3 +208,35 @@ $ locate <filename>
 Command:-
 $ locate aniket
 ----
+
+# ifconfig Command
+This command is use to check the IP Address
+[source,bash]
+----
+$ ifconfig
+Output:-
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
+        inet 172.31.95.248  netmask 255.255.240.0  broadcast 172.31.95.255
+        inet6 fe80::1043:32ff:fe13:973  prefixlen 64  scopeid 0x20<link>
+        ether 12:43:32:13:09:73  txqueuelen 1000  (Ethernet)
+        RX packets 41263  bytes 5430806 (5.1 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 34438  bytes 2236975 (2.1 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 10  bytes 612 (612.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10  bytes 612 (612.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+----
+
+# whoami Command
+
+This command prints the username associates with the currect effective ID
+[source,bash]
+$ whoami

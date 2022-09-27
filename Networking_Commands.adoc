@@ -66,3 +66,18 @@ telnet: connect to address 172.31.95.248: Connection refused
 $ telnet 172.31.95.248 80
 Output:- 
 Trying 172.31.95.248...
+
+# netstat Command [Network Statistics]
+
+This command shows information about your network including statistics on connections,services ports and routing tables
+
+[source,bash]
+----
+ Commands:-
+ 
+ $ netstat
+ $ netstat -apn [list all the unix ports]
+ $ netstat -at [list all the tcp ports]
+ $ netstat -au [list all the udp ports]
+ $ netstat -lntpu [list all the tcp and udp ports]
+----

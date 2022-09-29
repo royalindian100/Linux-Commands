@@ -242,4 +242,19 @@ This command prints the username associates with the currect effective ID
 $ whoami
 
 # find Command
- This command 
+
+### Command to list file which has size less than 6kb using find 
+[source,bash]
+$ sudo find /home/centos/ -size -6k -exec ls -lh {} \;
+
+### Command to delete file which has size greater than 4kb using find
+[source,bash]
+$ sudo find /home/centos/ -size +4k -exec rm -rf {} \;
+
+# whereis Command
+
+This command displays all the path of the file
+[source,bash]
+Command:- $ whereis java
+Output:-
+java: /usr/bin/java /usr/lib/java /etc/java /usr/share/java /usr/share/man/man1/java.1.gz

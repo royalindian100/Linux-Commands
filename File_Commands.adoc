@@ -270,3 +270,7 @@ Syntax:- $ head <filename>
 This command print the last 10 line of the content by default
 [source,bash]
 Syntax:- $ tail <filename>
+
+### Command to check the floating content
+[source,bash]
+Syntax:- $ tail -1000f <filename>

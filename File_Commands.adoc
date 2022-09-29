@@ -258,3 +258,15 @@ This command displays all the path of the file
 Command:- $ whereis java
 Output:-
 java: /usr/bin/java /usr/lib/java /etc/java /usr/share/java /usr/share/man/man1/java.1.gz
+
+# head Command 
+
+This command print the first 10 line of the content by default
+[source,bash]
+Syntax:- $ head <filename>
+
+# tail Command 
+
+This command print the last 10 line of the content by default
+[source,bash]
+Syntax:- $ tail <filename>
